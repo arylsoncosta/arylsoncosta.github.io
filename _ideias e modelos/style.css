@@ -1,0 +1,100 @@
+/* MEU PRIMEIRO CODICO EM CSS */ 
+
+/*Tags */
+h1{
+		background-color: black ; 
+
+		color: white; 
+
+		font-family: Arial;
+
+		font-size: 40px;
+	}
+
+
+*{
+	font-family: Helvetica, arial;
+	background="https://cdn.nba.net/nba-drupal-prod/2017-08/SEO-image-NBA-logoman.jpg"
+	background-color black;	
+}
+
+header{
+
+		background-image: linear-gradient(to right, black, grey) ; 
+
+		color: white; 
+
+		font-family: Stencil Std, fantasy;
+
+		font-size: 15px;
+		height: 50px , auto;
+	
+
+}
+
+button{
+background-color: red;
+color: white;
+cursor: hand;
+width: 200px ;
+height: 30px
+padding:0px 0px 0px 0px; 
+margin: 10px 15px 10px 15px;
+font-family: arial;
+cursor: pointer;
+ }
+
+
+footer{
+	clear: both;
+	font-family: Helvetica, arial;
+	color:white;
+	background-color: black;
+	height:60px , auto;
+	font-size: 13px;
+	text-align: right;}
+
+/*IDs */
+#div_esquerda{	
+	background-color: grey;
+	color:white;
+	min-height:350px;
+	width: 85 %;
+	float:left;
+}
+
+#div_direita{ 
+	background-color: #FF0000;
+	color:black;
+	min-height:350px;
+	width:15%;
+	float: right;
+	margin:  5px 0 8px 0;
+	shape-margin: black;
+	font-family: impact;
+	text-align: center;
+	}
+#txt_cabe{
+	font-family: Roboto , arial , impact ; 
+	padding: 0px 5px 10px 20px 
+	}
+
+
+
+
+/*Class */
+
+.container{
+
+}
+
+.bt3{cursor: pointer;}
+
+/* +++++++++++++++ Foramatação de textos (Esquerda / Direita / Centralizado) +++++++++++++++ */
+.texto_direita{margin: 20px}
+
+.texto_esquerda{margin: 20px}
+
+.texto_central{text-align: center;
+			margin: 20px;
+				}

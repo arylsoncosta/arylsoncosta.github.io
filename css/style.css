@@ -1,0 +1,248 @@
+/*			Css Principal		*/
+
+/*REFERE-SE A TODAS OS ELEMENTOS DA PAGINA*/
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none; /*Desativa os estilos das listas*/
+	box-sizing: border-box;
+}
+
+:root{
+	--cor-clara1: #fff;
+	--barras-transparentes:rgba(0,0,0,0);
+	--fundo-rodape:rgba(10,10,10,0.8)
+}
+
+body {
+	
+	font-family: 'Inknut Antiqua', serif;
+	height: 100%;
+
+}
+
+a {
+	text-decoration: none; /*Desativa o estilo padrões dos links*/
+}
+
+
+h1 , h2 , h3 , h4 , h5 , h6 {
+	font-family: 'Cinzel Decorative', cursive;
+
+}
+
+.clear{
+	clear: both;
+	display: inline-block;
+}
+
+/*---------Top da Pagina---------*/
+
+.topo-pagina{
+	margin: 10px auto;
+	width: 80%;
+	height: 10%;
+	top:0;
+	text-align: center;
+	background-image: linear-gradient(darkgray, gray );
+	position: relative;
+	border-bottom-left-radius: 7%;
+	border-bottom-right-radius: 7%;
+	border-top-left-radius: 4%;
+	border-top-right-radius: 4%;
+}
+
+.topo-pagina p{
+	display: inline-block;
+	color:#ccc;
+	top:0;
+	padding:10px calc(20% / 4);
+	border-left: solid 2px var(--barras-transparentes);
+	border-right: solid 2px var(--barras-transparentes);
+	transition: 111ms;
+}
+
+.topo-pagina a{
+	color: var(--cor-clara1);
+}
+
+.topo-pagina p:hover{
+	background-image: radial-gradient( rgba(5,5,5,0.8) ,  rgba(80,80,80,0.6));
+	color:#fff;
+	border-left: solid #000 2px;
+	border-right: solid #000 2px;
+	transition:  444ms;
+}
+
+.topo-pagina p:nth-child(1){
+	float: left;
+	border-right: black solid 1px;
+	background-size:contain;
+	background-repeat: no-repeat;
+	width: 250px;
+	height: 59px;
+	background-position: center;
+	border-bottom-left-radius: 7%;
+	border-top-left-radius: 4%;
+	cursor: pointer;
+	transition: 111ms;
+}
+
+.topo-pagina p:nth-child(1):hover{
+	transition: 111ms;	
+}
+
+.topo-pagina a:visited{
+	color:white;
+}
+
+
+.topo-pagina .ative{
+	
+	background-color: rgba(40,40,40,0.6);
+}
+
+
+
+.titulo-pagina{
+	color: #666;
+}
+
+.titulo-pagina h1{
+	align-items: baseline;
+	margin-top: 102px;
+}
+/*---------Centralisadores da Pagina---------*/
+
+.center-tx{
+	width: 60%;
+	height: 20%;
+	box-sizing: border-box;
+	margin: 0 auto;
+	margin-top: 7%;
+	text-align: center;
+	
+}
+
+.center{
+	margin: 0 auto;
+	width: 50%;
+}
+
+.container-central{
+	width: 100%;
+	height: 69.6vh;
+}
+/*---------Meio da Pagina---------*/
+
+
+#img1 {
+	
+	box-sizing: border-box;
+	margin: 0 auto;
+	float: center;
+	text-align: center;
+	
+}
+
+#img1 img{
+	height: 25%;
+	width: 25%;
+	min-width:200px ;
+	min-height:200px ;
+	margin: 20px auto;
+	border-radius: 10%;
+}
+
+.contatos{
+	text-align: center;
+	margin-bottom: 100px;
+	width: 67%;
+    min-width: 300px;
+    max-width: 550px;
+
+}
+
+.contatos h3{
+	text-shadow: 1px 1px 8px #000;
+	color: #fff;
+	background: rgba(200,200,200,0.4); 
+	border-radius: 37.2%;
+}
+
+.contatos a{
+	text-decoration: none;
+	color: #333;
+}
+
+.contatos p{
+	display: inline-block;
+	margin: 12px;
+	font-weight: bold;
+}
+
+.contatos img{
+	width: 35px;
+	height: 35px;
+	transition: 4444ms;
+}
+
+.contatos p:hover{
+	scale: 1.4;
+	transition: 0.3s;
+}
+
+.container-contatos{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	
+}
+
+@media screen and (max-width: 400px){
+
+	
+
+	.container-contatos{
+		width: 70%;
+	}
+
+	.topo-pagina {
+		width: 90%;
+		text-align: center;
+	}
+
+	.topo-pagina p{
+		text-align: center;
+		display: block;
+	}
+
+	.topo-pagina p:nth-child(1){
+		border: none;
+		text-align: center;
+		width: 100%;
+	}
+
+	.center-tx{
+		scale: 0.77;
+		text-align: center;
+	}
+}
+
+/*---------Rodape da Pagina---------*/
+
+.assinatura{
+	position: relative;
+	bottom: 0;
+	border-top: solid 4px #888;
+	/* height: 20px; */
+	width: 100%;
+	padding: 10px 0 ;
+	vertical-align: center;
+	margin: 0 auto;
+	margin-top: 60px;
+	text-align: center;
+	color: #ddd;
+	background-color: var(--fundo-rodape);
+}
